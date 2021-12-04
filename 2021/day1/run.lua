@@ -1,16 +1,7 @@
-local function read_file(path)
-  local file = io.open(path, "rb")
-  if not file then return nil end
-  file:close()
-  local lines = {}
-  for line in io.lines(path) do
-    lines[#lines + 1] = line
-  end
-  return lines
-end
+local utils = require('utils')
 
 local function run_part_1()
-  local lines = read_file('./input.txt')
+  local lines = utils.read_file('./input.txt')
   local current_value = nil
   local count = 0
 
@@ -26,7 +17,7 @@ local function run_part_1()
 end
 
 local function run_part_2()
-  local lines = read_file('./input.txt')
+  local lines = utils.read_file('./input.txt')
   local current_value = nil
   local count = 0
 
