@@ -1,7 +1,9 @@
 -- I don't give a shit if you think "utils" is a bad name
 -- ma code ma rulz!
 
-local function read_file(filename)
+local m = {}
+
+m.read_file = function(filename)
   local file = io.open(filename, "rb")
   if not file then return nil end
   file:close()
@@ -12,12 +14,12 @@ local function read_file(filename)
   return lines
 end
 
-local function trim_spaces(str)
+m.trim_spaces = function(str)
   return str:gsub("^%s+", ""):gsub("%s+$", "")
 end
 
-local function split_string(str, step)
-  str = trim_spaces(str)
+m.split_string = function(str, step)
+  str = m.trim_spaces(str)
   if step == nil then
     step = "%s"
   end
@@ -28,8 +30,4 @@ local function split_string(str, step)
   return t
 end
 
-return {
-  read_file = read_file,
-  split_string = split_string,
-  trim_spaces = trim_spaces,
-}
+return m
