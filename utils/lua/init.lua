@@ -14,8 +14,13 @@ m.read_file = function(filename)
   return lines
 end
 
+m.trim = function(str, char)
+  return str:gsub("^" .. char .. "+", ""):gsub(char .. "+$", "")
+end
+
 m.trim_spaces = function(str)
-  return str:gsub("^%s+", ""):gsub("%s+$", "")
+  -- return str:gsub("^%s+", ""):gsub("%s+$", "")
+  return m.trim(str, "%s")
 end
 
 m.split_string = function(str, step)
@@ -28,6 +33,20 @@ m.split_string = function(str, step)
     table.insert(t, char)
   end
   return t
+end
+
+m.print_list = function(list, delim)
+  local str = ""
+
+  if delim == nil then
+    delim = " "
+  end
+
+  for _, v in pairs(list) do
+    str = str .. delim .. v
+  end
+
+  return str
 end
 
 return m
