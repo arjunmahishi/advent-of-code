@@ -49,4 +49,29 @@ m.print_list = function(list, delim)
   return str
 end
 
+m.slice_list = function(list, start, stop)
+  local new_list = {}
+  local i = 1
+  for _, v in pairs(list) do
+    if i >= start and i <= stop then
+      table.insert(new_list, v)
+    end
+    i = i + 1
+  end
+  return new_list
+end
+
+m.dump = function(o)
+    if type(o) == 'table' then
+        local s = '{ '
+        for k,v in pairs(o) do
+                if type(k) ~= 'number' then k = '"'..k..'"' end
+                s = s .. '['..k..'] = ' .. m.dump(v) .. ','
+        end
+        return s .. '} '
+    else
+        return tostring(o)
+    end
+end
+
 return m

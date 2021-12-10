@@ -12,6 +12,7 @@ Solutions for [Advent of code](https://adventofcode.com/)
 | 1 | [link](https://adventofcode.com/2021/day/1) | [link](2021/day1) |
 | 2 | [link](https://adventofcode.com/2021/day/2) | [link](2021/day2) |
 | 3 | [link](https://adventofcode.com/2021/day/3) | [link](2021/day3) |
+| 4 | [link](https://adventofcode.com/2021/day/4) | [link](2021/day4) |
 
 
 </p>
