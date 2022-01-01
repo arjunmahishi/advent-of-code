@@ -11,5 +11,5 @@ func ReadInput(filename string) ([]string, error) {
 		return nil, err
 	}
 
-	return strings.Split(string(conts), "\n"), nil
+	return strings.Split(strings.TrimSpace(string(conts)), "\n"), nil
 }
