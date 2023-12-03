@@ -12,6 +12,6 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Printf("Part1: %d\n", part1(inp))
-	fmt.Printf("Part2: %d\n", part2(inp))
+	fmt.Printf("Part1: `%d`\n\n", part1(inp))
+	fmt.Printf("Part2: `%d`\n\n", part2(inp))
 }
