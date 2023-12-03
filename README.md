@@ -10,6 +10,7 @@ Solutions for [Advent of code](https://adventofcode.com/)
 | Day | Problem | Solution |
 | --- | --- | --- |
 | 1 | [link](https://adventofcode.com/2023/day/1) | [link](2023/day1) |
+| 2 | [link](https://adventofcode.com/2023/day/2) | [link](2023/day2) |
 
 
 </p>
