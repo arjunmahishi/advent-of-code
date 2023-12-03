@@ -4,6 +4,18 @@ Solutions for [Advent of code](https://adventofcode.com/)
 ## Contents
 
 <details>
+<summary>2023</summary>
+<p>
+
+| Day | Problem | Solution |
+| --- | --- | --- |
+| 1 | [link](https://adventofcode.com/2023/day/1) | [link](2023/day1) |
+
+
+</p>
+</details>
+
+<details>
 <summary>2021</summary>
 <p>
 
@@ -17,6 +29,7 @@ Solutions for [Advent of code](https://adventofcode.com/)
 | 6 | [link](https://adventofcode.com/2021/day/6) | [link](2021/day6) |
 | 7 | [link](https://adventofcode.com/2021/day/7) | [link](2021/day7) |
 | 8 | [link](https://adventofcode.com/2021/day/8) | [link](2021/day8) |
+| 9 | [link](https://adventofcode.com/2021/day/9) | [link](2021/day9) |
 
 
 </p>
